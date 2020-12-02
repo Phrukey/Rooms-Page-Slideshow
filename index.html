@@ -5,47 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Room homepage</title>
 
 </head>
 <body>
 
-  Home
-  Shop
-  About
-  Contact
+  <header>
+    <div class="showcase">
 
-  Discover innovative ways to decorate
+      <div class="navbar">
+        <input type="checkbox" name="menu" id="menu">
+        <label for="menu"><img src="/images/icon-hamburger.svg" alt="menu icon"></label>
+        <img src="/images/logo.svg" alt="Logo">
+        <nav class="dropdown">
+          <label for="menu"><img src="/images/icon-close.svg" alt=""></label>
+          <ul>
+            <li> Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
+      <div class="showcase-image">
+        <picture>
+          <source media="(min-width:650px)"srcset="/images/desktop-image-hero-1.jpg">
+          <img src="/images/mobile-image-hero-1.jpg" alt="room with a tables and two chairs">
+        </picture>
+        <picture>
+          <source media="(min-width:650px)" srcset="/images/desktop-image-hero-2.jpg">
+          <img src="/images/mobile-image-hero-2.jpg" alt="room with three chairs">
+        </picture>
+        <picture>
+          <source media="(min-width:650px)" srcset="/images/desktop-image-hero-3.jpg">
+          <img src="/images/mobile-image-hero-3.jpg" alt="dark room with one chair">
+        </picture>
+      </div>
+    </div>
+    <div class="showcase-details">
+      <div class="details-1">
+        <h1>
+          Discover innovative ways to decorate
+        </h1>
+        <p>
+          We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+        <a href="/">
+          <p>Shop now</p>
+          <img src="/images/icon-arrow.svg" alt="icon-arrow">
+        </a>
+      </div>
+    </div>
 
-  Shop now
+    <div class="details-2">
+      <h1>
+        We are available all across the globe
+      </h1>
+      <p>
+        With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.
+      </p>
+      <a href="/">
+        <p>Shop now</p>
+        <img src="/images/icon-arrow.svg" alt="icon-arrow">
+      </a>
+    </div>
+ 
+    <div class="details-2">
+      <h1>
+        Manufactured with the best materials
+      </h1>
+      <p>
+        Our modern furniture store provide a high level of quality. Our company has invested in advanced technology  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+        experience in this industry, we understand what customers want for their home and office.
+      </p>
+      <a href="/">
+        <p>Shop now</p>
+        <img src="/images/icon-arrow.svg" alt="icon-arrow">
+      </a>
+    </div>
+  </div>
+  </header>
+  <main>
+    <section class="section-1">
+        <img src="/images/image-about-dark.jpg" alt="dark room">
+    </section>
 
-  We are available all across the globe
+    <section class="section-2">
+      <h2>About our furniture</h2>
+      <p> Our multifunctional collection blends design and function to suit your individual taste.Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+    </section>
 
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
+    <section class="section-3">
+      <img src="/images/image-about-light.jpg" alt="room with light">
+    </section>
+  </main>
 
-  Shop now
+  
 
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
