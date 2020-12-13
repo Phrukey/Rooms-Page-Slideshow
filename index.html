@@ -11,13 +11,16 @@
 </head>
 <body>
 
-  <header>
+  <div class="header" >
     <div class="showcase">
-
+      
       <div class="navbar">
         <input type="checkbox" name="menu" id="menu">
-        <label for="menu"><img src="/images/icon-hamburger.svg" alt="menu icon"></label>
+        <div class="firstnav">
+          <label for="menu"><img src="/images/icon-hamburger.svg" alt="menu icon"></label>
         <img src="/images/logo.svg" alt="Logo">
+        </div>
+        
         <nav class="dropdown">
           <label for="menu"><img src="/images/icon-close.svg" alt=""></label>
           <ul>
@@ -28,24 +31,31 @@
           </ul>
         </nav>
       </div>
+    <div class="showcase-track">
+        <div class="showcase-image">
+          <picture >
+            <source media="(min-width:450px)"srcset="/images/desktop-image-hero-1.jpg">
+            <img src="/images/mobile-image-hero-1.jpg" alt="room with a tables and two chairs" class="current-slide" >
+          </picture>
+          <picture>
+            <source media="(min-width:450px)" srcset="/images/desktop-image-hero-2.jpg">
+            <img src="/images/mobile-image-hero-2.jpg" alt="room with three chairs"  >
+          </picture>
+          <picture>
+            <source media="(min-width:450px)" srcset="/images/desktop-image-hero-3.jpg">
+            <img src="/images/mobile-image-hero-3.jpg" alt="dark room with one chair" >
+          </picture>
+        </div>
+      </div>
 
-      <div class="showcase-image">
-        <picture>
-          <source media="(min-width:650px)"srcset="/images/desktop-image-hero-1.jpg">
-          <img src="/images/mobile-image-hero-1.jpg" alt="room with a tables and two chairs">
-        </picture>
-        <picture>
-          <source media="(min-width:650px)" srcset="/images/desktop-image-hero-2.jpg">
-          <img src="/images/mobile-image-hero-2.jpg" alt="room with three chairs">
-        </picture>
-        <picture>
-          <source media="(min-width:650px)" srcset="/images/desktop-image-hero-3.jpg">
-          <img src="/images/mobile-image-hero-3.jpg" alt="dark room with one chair">
-        </picture>
+
+      <div class="slider">
+        <button class="left"><img src="/images/icon-angle-left.svg" alt="left icon" class="left"></button>
+        <button class="right"><img src="/images/icon-angle-right.svg" alt="right icon" ></button>
       </div>
     </div>
     <div class="showcase-details">
-      <div class="details-1">
+      <div class="details-1 details">
         <h1>
           Discover innovative ways to decorate
         </h1>
@@ -55,40 +65,44 @@
           own style with our collection and make your property a reflection of you and what you love.
         </p>
         <a href="/">
-          <p>Shop now</p>
+          <p>S h o p  n o w</p>
+          <img src="/images/icon-arrow.svg" alt="icon-arrow">
+        </a>
+      </div>
+
+      <div class="details-2 details">
+        <h1>
+          We are available all across the globe
+        </h1>
+        <p>
+          With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.
+        </p>
+        <a href="/">
+          <p>S h o p  n o w</p>
+          <img src="/images/icon-arrow.svg" alt="icon-arrow">
+        </a>
+      </div>
+   
+      <div class="details-3 details">
+        <h1>
+          Manufactured with the best materials
+        </h1>
+        <p>
+          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+          experience in this industry, we understand what customers want for their home and office.
+        </p>
+        <a href="/">
+          <p>S h o p  n o w</p>
           <img src="/images/icon-arrow.svg" alt="icon-arrow">
         </a>
       </div>
     </div>
 
-    <div class="details-2">
-      <h1>
-        We are available all across the globe
-      </h1>
-      <p>
-        With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.
-      </p>
-      <a href="/">
-        <p>Shop now</p>
-        <img src="/images/icon-arrow.svg" alt="icon-arrow">
-      </a>
-    </div>
- 
-    <div class="details-2">
-      <h1>
-        Manufactured with the best materials
-      </h1>
-      <p>
-        Our modern furniture store provide a high level of quality. Our company has invested in advanced technology  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-        experience in this industry, we understand what customers want for their home and office.
-      </p>
-      <a href="/">
-        <p>Shop now</p>
-        <img src="/images/icon-arrow.svg" alt="icon-arrow">
-      </a>
-    </div>
+    
   </div>
-  </header>
+</div>
+
+
   <main>
     <section class="section-1">
         <img src="/images/image-about-dark.jpg" alt="dark room">
@@ -103,14 +117,6 @@
       <img src="/images/image-about-light.jpg" alt="room with light">
     </section>
   </main>
-
-  
-
- 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="slider.js"></script>
 </body>
 </html>
